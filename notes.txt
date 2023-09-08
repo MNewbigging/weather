@@ -1,0 +1,36 @@
+What this app should do:
+
+- get weather data for current location
+- use weather data to affect the 3js scene
+
+What will the 3js scene show:
+
+- a basic scene layout of small landscape
+- landscape objects always the same
+- weather fx change according to weather data
+
+What weather data does it need:
+
+- day/night to show moon/sun
+- time of day and sunrise/sunset to affect moon/sun position
+- rainfall/precipitation chance to show rain fx
+- snowfall to show snow fx
+- wind speed to show wind fx
+- cloud cover for cloud fx
+
+How will the weather fx work in the scene:
+
+Moon / sun:
+- need to compare sunrise/set vs current time 
+
+Moon / sun position:
+- compare current time vs sunrise/set time
+
+Rain:
+- amount or probability?
+- either raining or not 
+- can show more or less raindrops 
+
+Clouds:
+- 
+

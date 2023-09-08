@@ -1,6 +1,7 @@
 import { Component, OnDestroy } from '@angular/core';
 import { Subject, filter, takeUntil } from 'rxjs';
 
+import { SceneService } from './scene-service';
 import { WeatherService } from './weather.service';
 
 @Component({
@@ -13,7 +14,10 @@ export class AppComponent implements OnDestroy {
 
   private unsubscribe = new Subject<boolean>();
 
-  constructor(public weatherService: WeatherService) {
+  constructor(
+    public weatherService: WeatherService,
+    public sceneService: SceneService
+  ) {
     // Format place name
     weatherService.placeNameData
       .pipe(takeUntil(this.unsubscribe), filter(Boolean))
